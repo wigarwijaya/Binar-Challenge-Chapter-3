@@ -1,0 +1,5 @@
+.section-background {
+  background-image: url(./assets/main-bg.jpg);
+  background-size: cover;
+  height: 100vh;
+}
