@@ -3,3 +3,50 @@
   background-size: cover;
   height: 100vh;
 }
+.navbar {
+  height: 90px;
+}
+
+.navbar-brand {
+  width: 77px;
+  height: 33px;
+  left: 107px;
+  padding-top: 0px;
+
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 33px;
+  /* identical to box height */
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+.navbar-nav {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: right;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-right: 10px;
+
+  color: #ffffff;
+}
+
+.nav-left {
+  margin-left: 80px;
+}
+
+.nav-right {
+  margin-right: 50px;
+}
+
+.nav-item {
+  margin-right: 20px;
+}
