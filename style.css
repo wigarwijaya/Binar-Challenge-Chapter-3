@@ -22,9 +22,8 @@
   );
 }
 
-.y.mandatory-scroll-snapping {
-  scroll-snap-type: y proximity;
-  overflow-y: scroll;
+.anchor {
+  width: 100%;
   height: 960.14px;
 }
 
@@ -163,7 +162,7 @@ svg:hover {
 
 .section-background-two {
   position: absolute;
-  z-index: -2;
+  /* z-index: -2; */
   background-image: url(./assets/the-games-bg.jpg);
   background-size: cover;
   width: 100%;
@@ -218,7 +217,7 @@ svg:hover {
 
 .section-background-three {
   position: absolute;
-  z-index: -2;
+  /* z-index: -2; */
   background-image: url(./assets/features.jpg);
   background-size: cover;
   width: 100%;
@@ -226,11 +225,30 @@ svg:hover {
   scroll-snap-align: start;
 }
 
+.section-three-container {
+  height: 960.14px;
+  margin-top: 0;
+}
+
+.blank-area-left {
+  width: 50%;
+  height: 960.14px;
+
+  /* background: #eaeaea; */
+}
+
+.blank-area-right {
+  width: 50%;
+  height: 960.14px;
+
+  /* background: red; */
+}
+
 /* section four */
 
 .section-background-four {
   position: absolute;
-  z-index: -2;
+  /* z-index: -2; */
   background-image: url(./assets/requirements.png);
   background-size: cover;
   width: 100%;
@@ -242,7 +260,7 @@ svg:hover {
 
 .section-background-five {
   position: absolute;
-  z-index: -2;
+  /* z-index: -2; */
   background-image: url(./assets/the-games-bg.jpg);
   background-size: cover;
   width: 100%;
@@ -254,7 +272,7 @@ svg:hover {
 
 .section-background-six {
   position: absolute;
-  z-index: -2;
+  /* z-index: -2; */
   background-image: url(./assets/the-games-bg.jpg);
   background-size: cover;
   width: 100%;
