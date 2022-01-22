@@ -42,10 +42,6 @@
   height: 80px;
 }
 
-.navbar-dark {
-  opacity: 75%;
-}
-
 .navbar-brand {
   width: 77px;
   height: 33px;
@@ -205,6 +201,17 @@ svg:hover {
 .svg-left-toggle {
   position: absolute;
   left: -30px;
+  bottom: 170px;
+}
+
+.svg-right-toggle {
+  position: absolute;
+  bottom: 170px;
+  right: -30px;
+}
+
+.toggle-round {
+  width: 280px;
 }
 
 /* section three */
