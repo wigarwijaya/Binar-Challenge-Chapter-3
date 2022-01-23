@@ -1,6 +1,8 @@
 .body {
   margin: 0;
   padding: 0;
+  background-color: black;
+  box-sizing: border-box;
 }
 
 /* section one */
@@ -331,14 +333,41 @@ figure.color-white {
   /* opacity: 25%; */
 }
 
-/* section five */
+/* section six */
 
 .section-background-six {
   position: absolute;
   /* z-index: -2; */
-  background-image: url(./assets/the-games-bg.jpg);
+  /* background-image: url(./assets/the-games-bg.jpg); */
   background-size: cover;
+  background-color: black;
   width: 100%;
   height: 960.14px;
   scroll-snap-align: start;
+}
+
+.blank-area-left-end {
+  width: 50%;
+  height: 700px;
+
+  /* background: #eaeaea; */
+}
+
+.blank-area-right-end {
+  width: 50%;
+  height: 700px;
+
+  /* background: red; */
+}
+
+.skull {
+  background: radial-gradient(
+    45.43% 53.19% at 50% 50%,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(0, 0, 0, 0) 46.15%,
+    #080a0b 99.74%
+  );
+  width: 50%;
+  height: 700px;
+  position: absolute;
 }
