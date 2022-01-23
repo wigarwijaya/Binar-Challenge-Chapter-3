@@ -273,11 +273,29 @@ figure.color-white {
 .section-background-four {
   position: absolute;
   /* z-index: -2; */
-  background-image: url(./assets/requirements.png);
+  background-image: radial-gradient(
+      33.26% 45% at 64.32% 47.1%,
+      rgba(255, 255, 255, 0) 3.36%,
+      rgba(0, 0, 0, 0) 19.22%,
+      #080a0b 99.74%
+    ),
+    url(./assets/requirements.png);
   background-size: cover;
   width: 100%;
   height: 960.14px;
   scroll-snap-align: start;
+}
+
+.col-lg-3 {
+  height: 150px;
+  border: 1px solid grey;
+  padding: 1em;
+}
+
+.col-lg-6 {
+  height: 150px;
+  border: 1px solid grey;
+  padding: 1em;
 }
 
 /* section five */
@@ -290,6 +308,20 @@ figure.color-white {
   width: 100%;
   height: 960.14px;
   scroll-snap-align: start;
+}
+
+.blank-area-top {
+  height: 30%;
+  width: 100%;
+  /* background-color: salmon; */
+  /* opacity: 25%; */
+}
+
+.blank-area-bottom {
+  height: 60%;
+  width: 100%;
+  /* background-color: green; */
+  /* opacity: 25%; */
 }
 
 /* section five */
