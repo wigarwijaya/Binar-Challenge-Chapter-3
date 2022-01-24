@@ -14,7 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
-<body>
+<body style="max-width: 100vw; overflow-x: hidden;">
 
   <!-- section one -->
   
@@ -62,9 +62,10 @@
           <button class="btn"><span>Play Now</span></button>
         </div>
       </main>
-      <figure class="container figure-toggle position-relative">
-        <div class="text-center div-button">
-          <span class="container"><a href="#about" class="text-uppercase fw-bold toggle-caption">The Story</a></span>
+      <figure class="col-12 text-center figure-toggle">
+        <div><a href="#about" class="text-uppercase fw-bold toggle-caption">The Story</a>
+        </div>
+        <div>
           <a href="#about">
             <svg class="container" width="23" height="12" viewBox="0 0 23 12" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M21.5786 1.83362H1.32422L11.338 10.0027L21.5786 1.83362Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -77,7 +78,7 @@
   <!-- section two -->
 
   <div id="about" class="anchor">
-    <div class="section-background-two">
+    <div class="section-background-two d-flex align-items-center">
       <section class="container d-flex justify-content-center section-two-container">
         <div class="section-two-box-left">
           <span class="sub-title">What's so special?</span>
@@ -117,8 +118,8 @@
   <div id="feature" class="anchor">
     <div class="section-background-three">
       <main class="d-flex justify-content-between section-three-container">
-        <section class="blank-area-left"></section>
-        <aside class="blank-area-right">
+        <section class="blank-area-left section-three-left-area"></section>
+        <aside class="blank-area-right section-three-right-area">
           <div class="d-flex flex-column justify-content-end" style="
           height: 345px; padding-left: 18px;">
             <span class="sub-title">What's so special?</span>
@@ -156,14 +157,13 @@
   <div id="requirements" class="anchor">
     <div class="section-background-four">
       <main class="d-flex justify-content-center flex-column section-three-container">
-        <section class="blank-area-top d-flex justify-content-center flex-column" style="margin-top: 150px;">
+        <section class="blank-area-top section-four-top-area d-flex justify-content-center flex-column">
           <figure class="lead color-white text-center">Can my computer run this game?</figure>
-          <h1 class="display-3" style="color: white; margin-top: 35px;
-          margin-left: 125px;">system<br>requirements</h1>
+          <h1 class="display-3 h1-section-four">system<br>requirements</h1>
         </section>
-        <section class="blank-area-bottom">
+        <section class="blank-area-bottom section-four-bottom-area">
           <div>
-            <div class="container-fluid mx-5 ps-5">
+            <div class="container-fluid section-four-container-bottom">
               <div class="row justify-content-start">
                 <div class="col-lg-3">
                   <h3 class="mt-2" style="color: #FFB548;">OS:</h3>
@@ -201,48 +201,47 @@
 
   <div id="quotes" class="anchor">
     <div class="section-background-five">
-      <main class="d-flex justify-content-between section-three-container">
-        <section class="blank-area-left d-flex align-items-center">
-          <div class="card-body d-flex flex-column justify-content-between" style="
-          height: 300px; padding-left: 70px;">
+      <main class="d-flex justify-content-between section-three-container section-five-container">
+        <section class="d-flex align-items-center section-five-area-left">
+          <div class="card-body-left d-flex flex-column justify-content-between">
             <h1 class="display-4">Top Scores</h1>
             <p class="card-text lead" style="color: white; letter-spacing: 1px;">This top score from various games provided <br> on this platform</p>
             <button class="btn"><span>See more</span></button>
           </div>
         </section>
-        <section class="blank-area-right d-flex justify-content-center align-items-center">
+        <section class="d-flex justify-content-center align-items-center section-five-area-right">
           <div class="container">
-            <div class="row justify-content-center mb-3">
-              <div class="col-lg-7 col-sm-12 p-0" style="height: 160px; background: rgba(255, 255, 255, 0.08); border-radius: 10px;">
-              <div class="card-evan d-flex flex-column" style="height: 160px;">
-                <div class="d-flex justify-content-around align-items-center" style="height: 50%;">
-                  <div style="position: relative; width: 60px;height: 60px;background-color: #FFB548;border-radius: 50%;">
-                    <img src="./assets/image-1.jpg" alt="Evan Lahti" style="position: absolute; border-radius: 50%;left: -10px; width: 60px;">
+            <div class="div-card row justify-content-center">
+              <div class="div-card-area col-lg-7 col-sm-12 p-0">
+                <div class="card-evan d-flex flex-column">
+                  <div class="d-flex justify-content-around align-items-center" style="height: 50%;">
+                    <div style="position: relative; width: 60px;height: 60px;background-color: #FFB548;border-radius: 50%;">
+                      <img src="./assets/image-1.jpg" alt="Evan Lahti" style="position: absolute; border-radius: 50%;left: -10px; width: 60px;">
+                    </div>
+                    <div style="width: 210px;">
+                      <h3 class="mt-4 mb-0" style="color: #FFB548;">Evan Lahti</h3>
+                      <span style="color: rgba(255, 255, 255, 0.548);">PC Gamer</span>
+                    </div>
+                    <div>
+                      <svg width="19" height="15" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path opacity="0.3" d="M18.3981 2.41449C17.7231 2.70013 17.0072 2.88765 16.2741 2.97084C17.0365 2.53297 17.623 1.84099 17.899 1.01526C17.1731 1.42694 16.3789 1.71699 15.5508 1.87286C14.8519 1.15947 13.8744 0.755389 12.8519 0.757085C10.8105 0.757085 9.15361 2.33909 9.15361 4.29061C9.15361 4.5679 9.18627 4.83816 9.25021 5.09623C6.17639 4.94862 3.45216 3.54236 1.62787 1.404C1.30934 1.92529 1.12764 2.53297 1.12764 3.18076C1.12764 4.40623 1.78024 5.48805 2.77231 6.12188C2.18494 6.10468 1.61046 5.95309 1.09706 5.67983V5.7249C1.09706 7.43659 2.37189 8.86495 4.06278 9.19027C3.5182 9.3312 2.94722 9.35187 2.39305 9.25072C2.86384 10.6549 4.22998 11.6764 5.8475 11.7061C4.5821 12.6524 2.98781 13.2184 1.25483 13.2184C0.960153 13.2181 0.66574 13.2015 0.373047 13.1689C2.00943 14.1713 3.95365 14.7571 6.04185 14.7571C12.8438 14.7571 16.5627 9.37118 16.5627 4.70056C16.5627 4.54779 16.5627 4.39502 16.5513 4.24335C17.2749 3.74295 17.8998 3.12372 18.3969 2.41449H18.3981Z" fill="white"/>
+                      </svg>
+                    </div>
                   </div>
-                  <div style="width: 210px;">
-                    <h3 class="mt-4 mb-0" style="color: #FFB548;">Evan Lahti</h3>
-                    <span style="color: rgba(255, 255, 255, 0.548);">PC Gamer</span>
+                  <div class="d-flex justify-content-center flex-column" style="height: 50%; padding: 12px;">
+                    <div>
+                      <span class="lead" style="color: white;">"One of my gaming highlights of the year."</span>
                   </div>
                   <div>
-                    <svg width="19" height="15" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path opacity="0.3" d="M18.3981 2.41449C17.7231 2.70013 17.0072 2.88765 16.2741 2.97084C17.0365 2.53297 17.623 1.84099 17.899 1.01526C17.1731 1.42694 16.3789 1.71699 15.5508 1.87286C14.8519 1.15947 13.8744 0.755389 12.8519 0.757085C10.8105 0.757085 9.15361 2.33909 9.15361 4.29061C9.15361 4.5679 9.18627 4.83816 9.25021 5.09623C6.17639 4.94862 3.45216 3.54236 1.62787 1.404C1.30934 1.92529 1.12764 2.53297 1.12764 3.18076C1.12764 4.40623 1.78024 5.48805 2.77231 6.12188C2.18494 6.10468 1.61046 5.95309 1.09706 5.67983V5.7249C1.09706 7.43659 2.37189 8.86495 4.06278 9.19027C3.5182 9.3312 2.94722 9.35187 2.39305 9.25072C2.86384 10.6549 4.22998 11.6764 5.8475 11.7061C4.5821 12.6524 2.98781 13.2184 1.25483 13.2184C0.960153 13.2181 0.66574 13.2015 0.373047 13.1689C2.00943 14.1713 3.95365 14.7571 6.04185 14.7571C12.8438 14.7571 16.5627 9.37118 16.5627 4.70056C16.5627 4.54779 16.5627 4.39502 16.5513 4.24335C17.2749 3.74295 17.8998 3.12372 18.3969 2.41449H18.3981Z" fill="white"/>
-                    </svg>
+                    <span style="color: rgba(255, 255, 255, 0.548); font-size: 12px;">June 18, 2021</span>
                   </div>
                 </div>
-                <div class="d-flex justify-content-center flex-column" style="height: 50%; padding: 12px;">
-                  <div>
-                    <span class="lead" style="color: white;">"One of my gaming highlights of the year."</span>
-                </div>
-                <div>
-                  <span style="color: rgba(255, 255, 255, 0.548); font-size: 12px;">June 18, 2021</span>
-                </div>
-              </div>
               </div>
               </div>
             </div>
-            <div class="row mb-3">
-              <div class="col-lg-7 col-sm-12" style="height: 180px; background: rgba(255, 255, 255, 0.08); border-radius: 10px;">
-                <div class="card-jada d-flex flex-column" style="height: 160px;">
+            <div class="div-card row">
+              <div class="div-card-area col-lg-7 col-sm-12">
+                <div class="card-jada d-flex flex-column">
                   <div class="d-flex justify-content-around align-items-center" style="height: 50%;">
                     <div style="position: relative; width: 60px;height: 60px;background-color: #FFB548;border-radius: 50%;">
                       <img src="./assets/image-2.jpg" alt="Jada Griffin" style="position: absolute; border-radius: 50%;left: -10px; width: 60px;">
@@ -268,9 +267,9 @@
                 </div>
               </div>
             </div>
-            <div class="row justify-content-center">
-              <div class="col-lg-7 col-sm-12 me-5" style="height: 180px; background: rgba(255, 255, 255, 0.08); border-radius: 10px;">
-              <div class="card-aaron d-flex flex-column" style="height: 160px;">
+            <div class="div-card row justify-content-center">
+              <div class="div-card-area col-lg-7 col-sm-12">
+                <div class="card-aaron d-flex flex-column">
                 <div class="d-flex justify-content-around align-items-center" style="height: 50%;">
                   <div style="position: relative; width: 60px;height: 60px;background-color: #FFB548;border-radius: 50%;">
                     <img src="./assets/image-3.jpg" alt="Aaron Williams" style="position: absolute; border-radius: 50%;left: -10px; width: 60px;">
@@ -293,7 +292,7 @@
                   <span style="color: rgba(255, 255, 255, 0.548); font-size: 12px;">December 24, 2018</span>
                 </div>
               </div>
-              </div>
+                </div>
               </div>
             </div>
           </div>
@@ -307,23 +306,22 @@
   <div id="" class="anchor">
     <div class="section-background-six">
       <main class="d-flex m-0">
-        <section class="blank-area-left-end d-flex justify-content-end">
+        <section class="section-six-area-left d-flex justify-content-end">
           <div class="skull"></div>
           <img class="me-5" src="./assets/image.png" alt="" style="max-width: 100%; height:auto; object-fit: contain;">
         </section>
-        <section class="blank-area-right-end d-flex align-items-center"">
-          <div class="card-body d-flex flex-column justify-content-between" style="
-          height: 450px; padding: 0 16px 0 0;">
+        <section class="section-six-area-right d-flex align-items-center"">
+          <div class="section-six-card-body d-flex flex-column justify-content-between">
             <figure class="lead color-white">Want to stay in<br>touch?</figure>
             <h1 class="display-4">Newsletter<br>subscribe</h1>
             <p class="card-text lead" style="color: white; font-size: 17px;">In order to start receiving our news, all you have to do is enter your email address. Everything else will be taken care of by us. We will send you emails containing information about game. We don’t spam.</p>
-            <div class="d-flex">
-              <div class="row">
-                <div class="col">
-                  <input type="text" class="form-control text-white bg-dark border-0 me-3" style="width: 340px; height: 60px;" placeholder="Your email adress" aria-label="Your email adress">
-                </div>
+            <div class="row section-six-row">
+              <div class="col-lg-7 col-sm-12 section-six-input">
+                <input type="text" class="form-control text-white bg-dark border-0" placeholder="Your email adress" aria-label="Your email adress">
               </div>
-              <button class="btn d-inline"><span>subscribe now</span></button>
+              <div class="col-lg-5 col-sm-12">
+                <button class="btn d-inline"><span>subscribe now</span></button>
+              </div>
             </div>
           </div>
         </section>
@@ -369,8 +367,12 @@
             </li>
           </ul>
         </div>
-        <div class="py-1">
-          <img src="./assets/border.svg" alt="">
+        <div class="section-six-border py-1">
+          <div>
+            <svg width="100%" height="2" viewBox="0 0 1200 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path opacity="0.5" d="M1.22388 0.806152L1199.05 0.806257" stroke="white" stroke-width="0.873968" stroke-linecap="round"/>
+            </svg>
+          </div>
         </div>
         <div class="d-flex justify-content-between">
           <p style="color: white; opacity: 0.5; font-size: 12px;">© 2018 Your Games, Inc. All Rights Reserved</p>

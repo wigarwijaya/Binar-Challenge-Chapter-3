@@ -68,10 +68,6 @@
   margin-left: 60px;
 }
 
-/* .nav-right {
-  margin-right: 50px;
-} */
-
 .nav-item {
   padding-left: 20px;
 }
@@ -83,8 +79,12 @@ main {
 h1 {
   font-family: Arial;
   font-style: normal;
-  font-size: 65px;
   color: #ffffff;
+  text-transform: uppercase;
+}
+
+h1.section-one {
+  font-size: 65px;
 }
 
 h3 {
@@ -94,7 +94,6 @@ h3 {
   line-height: 28px;
   letter-spacing: 2px;
   margin-top: 30px;
-
   color: #ffffff;
 }
 
@@ -119,7 +118,7 @@ h3 {
 }
 
 .figure-toggle {
-  top: 300px;
+  padding-top: 18em;
 }
 
 .toggle-caption {
@@ -155,12 +154,8 @@ svg:hover {
   scroll-snap-align: start;
 }
 
-.section-two-container {
-  margin-top: 18em;
-}
-
 .section-two-box-left {
-  width: 362px;
+  width: 600px;
 }
 
 .sub-title {
@@ -170,14 +165,13 @@ svg:hover {
   font-size: 24px;
   line-height: 28px;
   letter-spacing: 2px;
-
   color: #ffffff;
 }
 
 .section-two-img {
   background-image: url(./assets/rockpaperstrategy-1600.jpg);
   background-size: cover;
-  width: 758px;
+  width: 100%;
   height: 379px;
   position: relative;
 }
@@ -218,15 +212,11 @@ svg:hover {
 .blank-area-left {
   width: 50%;
   height: 960.14px;
-
-  /* background: #eaeaea; */
 }
 
 .blank-area-right {
   width: 50%;
   height: 960.14px;
-
-  /* background: red; */
 }
 
 .svg-group {
@@ -271,6 +261,35 @@ figure.color-white {
   scroll-snap-align: start;
 }
 
+.h1-section-four {
+  color: white;
+  margin-top: 35px;
+  margin-left: 125px;
+}
+
+.blank-area-top {
+  height: 30%;
+  width: 100%;
+  /* background-color: salmon; */
+  /* opacity: 25%; */
+}
+
+.blank-area-bottom {
+  height: 60%;
+  width: 100%;
+  /* background-color: green; */
+  /* opacity: 25%; */
+}
+
+.section-four-top-area {
+  margin-top: 150px;
+}
+
+.section-four-container-bottom {
+  margin: 0 5em;
+  padding-left: 4em;
+}
+
 .col-lg-3 {
   height: 150px;
   border: 1px solid grey;
@@ -294,25 +313,37 @@ figure.color-white {
       rgba(0, 0, 0, 0) 51.1%,
       #080a0b 99.74%
     ),
-    url(./assets/the-games-bg.jpg);
+    url(./assets/quotes-bg.jpg);
   background-size: cover;
   width: 100%;
   height: 960.14px;
   scroll-snap-align: start;
 }
 
-.blank-area-top {
-  height: 30%;
-  width: 100%;
-  /* background-color: salmon; */
-  /* opacity: 25%; */
+.section-five-area-left {
+  width: 50%;
+  height: 960.14px;
 }
 
-.blank-area-bottom {
-  height: 60%;
-  width: 100%;
-  /* background-color: green; */
-  /* opacity: 25%; */
+.section-five-area-right {
+  width: 50%;
+  height: 960.14px;
+}
+
+.card-body-left {
+  height: 300px;
+  padding-left: 70px;
+}
+
+.div-card {
+  margin: 1em;
+}
+
+.div-card-area {
+  height: 180px;
+  width: 400px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
 }
 
 /* section six */
@@ -328,18 +359,14 @@ figure.color-white {
   scroll-snap-align: start;
 }
 
-.blank-area-left-end {
+.section-six-area-left {
   width: 50%;
   height: 700px;
-
-  /* background: #eaeaea; */
 }
 
-.blank-area-right-end {
+.section-six-area-right {
   width: 50%;
   height: 700px;
-
-  /* background: red; */
 }
 
 .skull {
@@ -354,6 +381,20 @@ figure.color-white {
   position: absolute;
 }
 
+.section-six-card-body {
+  height: 450px;
+  padding: 0 16px 0 0;
+}
+
+.section-six-row {
+  padding-right: 40px;
+}
+
+.form-control {
+  width: 340px;
+  height: 60px;
+}
+
 /* RESPONSIVE */
 
 /* If the screen size is 501px wide or more, set the font-size of <div> to 80px */
@@ -365,7 +406,121 @@ figure.color-white {
 
 /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
 @media screen and (max-width: 500px) {
+  .section-background-one {
+    background-position: -415px 0;
+  }
+
   h1.section-one {
     font-size: 50px;
+  }
+
+  .figure-toggle {
+    padding-top: 10em;
+  }
+
+  /* section two */
+
+  .section-two-container {
+    flex-direction: column;
+  }
+
+  .section-two-box-left {
+    width: 100%;
+    text-align: center;
+  }
+
+  .section-two-img {
+    background-position-x: -215px;
+  }
+
+  .svg-left-toggle {
+    left: 10px;
+  }
+
+  .svg-right-toggle {
+    right: 10px;
+  }
+
+  /* section three */
+
+  .section-background-three {
+    background-position-x: -430px;
+  }
+
+  .section-three-left-area {
+    width: 40%;
+  }
+
+  .section-three-right-area {
+    width: 60%;
+  }
+
+  /* section four */
+
+  .h1-section-four {
+    margin-top: 0;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .section-four-top-area {
+    margin-top: 50px;
+  }
+
+  .section-four-bottom-area {
+    height: 100%;
+  }
+
+  .section-four-container-bottom {
+    margin: 0em;
+    padding-right: 3em;
+    padding-left: 3em;
+  }
+
+  .col-lg-3 {
+    height: 130px;
+  }
+
+  /* section five */
+
+  .section-five-container {
+    flex-direction: column;
+  }
+
+  .section-five-area-left {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .section-five-area-right {
+    width: 100%;
+  }
+
+  .card-body-left {
+    padding-left: 0;
+    align-items: center;
+  }
+
+  /* section six */
+
+  .section-six-area-right {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+  }
+
+  .section-six-card-body {
+    padding: 50px;
+  }
+
+  .section-six-row {
+    padding-right: 0;
+  }
+
+  .section-six-input {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
   }
 }
