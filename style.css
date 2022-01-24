@@ -395,6 +395,46 @@ figure.color-white {
   height: 60px;
 }
 
+.footer-top {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer-top-left {
+  text-transform: uppercase;
+}
+
+ul.text-link {
+  justify-content: end;
+}
+
+li.footer:hover {
+  opacity: 75%;
+}
+
+.footer-bot-start {
+  color: white;
+  opacity: 0.5;
+  font-size: 12px;
+}
+
+.footer-bot-end {
+  font-family: open sans;
+  color: white;
+  letter-spacing: 1px;
+  font-size: 12px;
+}
+
+a.footer {
+  text-decoration: none;
+  color: white;
+}
+
+a.footer:hover {
+  cursor: pointer;
+  opacity: 75%;
+}
+
 /* RESPONSIVE */
 
 /* If the screen size is 501px wide or more, set the font-size of <div> to 80px */
@@ -404,7 +444,7 @@ figure.color-white {
   }
 } */
 
-/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+/* If the screen size is 500px wide or less, set the font-size of <div> to 30px */
 @media screen and (max-width: 500px) {
   .section-background-one {
     background-position: -415px 0;
@@ -522,5 +562,18 @@ figure.color-white {
     display: flex;
     justify-content: center;
     margin-bottom: 10px;
+  }
+
+  .footer-top {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  ul.text-link {
+    justify-content: center;
+  }
+
+  .footer-bot-end {
+    text-align: end;
   }
 }
