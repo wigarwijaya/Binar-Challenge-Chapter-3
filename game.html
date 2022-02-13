@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="style_game.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans&display=swap" rel="stylesheet">
+    <title>Game</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+          <div class="col-sm-4 player">
+            <div class="row">
+              <div class="col-12"><h2>PLAYER</h2></div>
+              <div class="col-12">
+                <!-- <div id="batu" onclick="chooseHand(event)"> -->
+                <div id="batu" class="hand">
+                  <img src="./img/batu.png" alt="Batu" />
+                </div>
+              </div>
+              <div class="col-12">
+                <!-- <div id="kertas" onclick="game.play()"> -->
+                <div id="kertas" class="hand">
+                  <img src="./img/kertas.png" alt="Kertas" />
+                </div>
+              </div>
+              <div class="col-12">
+                <div id="gunting" class="hand">
+                  <img src="./img/gunting.png" alt="Gunting" />
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div
+            id="game-result"
+            class="col-sm-4 d-flex align-items-center justify-content-center"
+          >
+            <h1 class="vs-text">VS</h1>
+  
+            <div class="player-result">COM WIN</div>
+  
+            <div class="image-win"></div>
+          </div>
+  
+          <div class="col-sm-4 com">
+            <div class="row">
+              <div class="col-12"><h2>COMPUTER</h2></div>
+              <div class="col-12 com-hand">
+                <div id="batu" class="text-black align-bottom">
+                  <img src="./img/batu.png" alt="Batu" />
+                </div>
+              </div>
+              <div class="col-12 com-hand">
+                <div id="com-kertas">
+                  <img src="./img/kertas.png" alt="Kertas" />
+                </div>
+              </div>
+              <div class="col-12 com-hand">
+                <div id="com-gunting">
+                  <img src="./img/gunting.png" alt="Gunting" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="text-center">
+              <img src="./img/refresh.png" alt="Refresh" />
+            </div>
+          </div>
+        </div>
+      </div>
+  
+
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
