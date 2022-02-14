@@ -1,0 +1,79 @@
+body {
+  background-color: #9c835f;
+}
+
+img {
+  width: 80px;
+  height: 80px;
+}
+
+#refresh {
+  width: 60px;
+  height: 60px;
+}
+
+.background_clicked {
+  padding: 22px 45px;
+  border-radius: 20px;
+}
+
+.highlight {
+  background: #c4c4c4;
+}
+
+.vs-text {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 144px;
+  line-height: 196px;
+  letter-spacing: 0.1em;
+  color: #bd0000;
+}
+
+.player-result {
+  position: absolute;
+  height: 180px;
+  width: 300px;
+  border-radius: 15px;
+  background-color: #4c9654;
+  color: white;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transform: rotate(-20deg);
+  display: none;
+}
+
+.com-result {
+  position: absolute;
+  height: 180px;
+  width: 300px;
+  border-radius: 15px;
+  background-color: #4c9654;
+  color: white;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transform: rotate(-20deg);
+  display: none;
+}
+
+.draw-result {
+  position: absolute;
+  height: 180px;
+  width: 300px;
+  border-radius: 15px;
+  background-color: #035b0c;
+  color: white;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transform: rotate(-20deg);
+  display: none;
+}
