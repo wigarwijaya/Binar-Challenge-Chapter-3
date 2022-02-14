@@ -15,75 +15,92 @@
     <title>Game</title>
 </head>
 <body>
-    <div class="container">
-        <div class="row">
-          <div class="col-sm-4 player">
-            <div class="row">
-              <div class="col-12"><h2>PLAYER</h2></div>
-              <div class="col-12">
-                <!-- <div id="batu" onclick="chooseHand(event)"> -->
-                <div id="batu" class="hand">
-                  <img src="./img/batu.png" alt="Batu" />
-                </div>
-              </div>
-              <div class="col-12">
-                <!-- <div id="kertas" onclick="game.play()"> -->
-                <div id="kertas" class="hand">
-                  <img src="./img/kertas.png" alt="Kertas" />
-                </div>
-              </div>
-              <div class="col-12">
-                <div id="gunting" class="hand">
-                  <img src="./img/gunting.png" alt="Gunting" />
-                </div>
-              </div>
-            </div>
-          </div>
-  
-          <div
-            id="game-result"
-            class="col-sm-4 d-flex align-items-center justify-content-center"
-          >
-            <h1 class="vs-text">VS</h1>
-  
-            <div class="player-result">COM WIN</div>
-  
-            <div class="image-win"></div>
-          </div>
-  
-          <div class="col-sm-4 com">
-            <div class="row">
-              <div class="col-12"><h2>COMPUTER</h2></div>
-              <div class="col-12 com-hand">
-                <div id="batu" class="text-black align-bottom">
-                  <img src="./img/batu.png" alt="Batu" />
-                </div>
-              </div>
-              <div class="col-12 com-hand">
-                <div id="com-kertas">
-                  <img src="./img/kertas.png" alt="Kertas" />
-                </div>
-              </div>
-              <div class="col-12 com-hand">
-                <div id="com-gunting">
-                  <img src="./img/gunting.png" alt="Gunting" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-  
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="text-center">
-              <img src="./img/refresh.png" alt="Refresh" />
-            </div>
-          </div>
-        </div>
-      </div>
-  
+    <div class="container-fluid" style="height: 100vh;">
 
+        <!-- Header -->
+
+        <div class="container-fluid d-flex align-items-center" style="
+        height: 6rem;">
+            <a href="/index.html" style="text-decoration: none; font-size: 72px; color: #724C21;"><</a>
+            <img src="/assets_2/logo 1.png" alt="Logo" style="width: 72px; height: 72px; margin-left: 50px;"/>
+            <h1 style="color: #F9B23D; margin-left: 50px;">ROCK PAPER SCISSORS</h1>
+        </div>
+
+        <!-- content -->
+
+        <div class="container-fluid d-flex flex-column justify-content-around" style="height: 600px;">
+            <div class="container-fluid d-flex justify-content-around align-content-center">
+                <div class="container-fluid d-flex flex-column justify-content-around align-content-center justify-content-between" style="width: 200px; height: 500px;">
+                    <h2 class="text-center">PLAYER 1</h2>
+                    <!-- <div id="player-batu" class="player background_clicked"> -->
+                    <div class="player background_clicked">
+                        <div class="text-center">
+                            <img class="batu" src="/assets_2/batu.png" alt="Batu" />
+                        </div>
+                    </div>
+                    <!-- <div id="player-kertas" class="player background_clicked"> -->
+                    <div class="player background_clicked">
+                        <div class="text-center">
+                            <img class="kertas" src="/assets_2/kertas.png" alt="Kertas" />
+                        </div>
+                    </div>
+                    <!-- <div id="player-gunting" class="player background_clicked"> -->
+                    <div class="player background_clicked">
+                        <div class="text-center">
+                            <img class="gunting" src="/assets_2/gunting.png" alt="Gunting" />
+                        </div>
+                    </div>
+                </div>
+                <div id="game-result" class="container-fluid d-flex flex-column justify-content-around align-content-center" style="width: 300px; height: 500px; position: relative;">
+                    <h1 class="vs-text text-center">VS</h1>
+                    <div id="player-win" class="player-result text-center">
+                        <span>PLAYER WIN</span>
+                    </div>
+                    <div id="com-win" class="com-result text-center">
+                        <span>COM WIN</span>
+                    </div>
+                    <div id="draw" class="draw-result text-center">
+                        <span>DRAW</span>
+                    </div>
+                </div>
+                <div class="container-fluid d-flex flex-column justify-content-around align-content-center justify-content-between" style="width: 200px; height: 500px;">
+                    <h2 class="text-center">COM</h2>
+                    <!-- <div id="com-batu" class="com background_clicked"> -->
+                    <div class="com com-batu background_clicked">
+                        <div class="text-center">
+                            <img class="batu" src="/assets_2/batu.png" alt="Batu" />
+                        </div>
+                    </div>
+                    <!-- <div id="com-kertas" class="com background_clicked"> -->
+                    <div class="com com-kertas background_clicked">
+                        <div class="text-center">
+                            <img class="kertas" src="/assets_2/kertas.png" alt="Kertas" />
+                        </div>
+                    </div>
+                    <!-- <div id="com-gunting" class="com background_clicked"> -->
+                    <div class="com com-gunting background_clicked">
+                        <div class="text-center">
+                            <img class="gunting" src="/assets_2/gunting.png" alt="Gunting" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid">
+                <div class="text-center">
+                    <img id="refresh" src="/assets_2/refresh.png" onClick="document.location.reload(true)" alt="Refresh"  />
+                </div>
+            </div>
+        </div>
+
+        <!-- footer -->
+
+        <div class="container-fluid" style="height: 50px;"></div>
+    </div>
+  
+    <!-- script -->
 
     <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="/script.js"></script>
 </body>
 </html>
