@@ -4,19 +4,24 @@
   "description": "",
   "main": "script.js",
   "scripts": {
+    "start": "",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/wigarwijaya/challenge-chapt-3.git"
   },
-  "author": "",
+  "author": "R. Wigar Wijaya W.",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/wigarwijaya/challenge-chapt-3/issues"
   },
   "homepage": "https://github.com/wigarwijaya/challenge-chapt-3#readme",
   "dependencies": {
-    "express": "^4.17.3"
+    "express": "^4.17.3",
+    "moment": "^2.29.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
   }
 }
