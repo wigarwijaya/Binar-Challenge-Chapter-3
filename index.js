@@ -23,13 +23,12 @@ app.get("/", (req, res) => {
   res.render("index");
 });
 
-// EJS PAGE LOGIN
+// EJS LOGIN PAGE
 app.get("/login", (req, res) => {
   res.render("login", {
     error: '',
   });
 });
-
 
 // API LOGIN
 app.post("/login/auth", (req, res) => {

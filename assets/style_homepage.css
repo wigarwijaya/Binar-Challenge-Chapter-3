@@ -21,7 +21,7 @@ body {
       rgba(52, 44, 29, 0.80319) 73.22%,
       #08090a 99.74%
     ),
-    url(./assets/main-bg.jpg);
+    url(./img/homepage/main-bg.jpg);
   background-size: cover;
   width: 100%;
   height: 960.14px;
@@ -147,7 +147,7 @@ svg:hover {
 .section-background-two {
   position: absolute;
   /* z-index: -2; */
-  background-image: url(./assets/the-games-bg.jpg);
+  background-image: url(./img/homepage/the-games-bg.jpg);
   background-size: cover;
   width: 100%;
   height: 960.14px;
@@ -169,7 +169,7 @@ svg:hover {
 }
 
 .section-two-img {
-  background-image: url(./assets/rockpaperstrategy-1600.jpg);
+  background-image: url(./img/homepage/rockpaperstrategy-1600.jpg);
   background-size: cover;
   width: 100%;
   height: 379px;
@@ -197,7 +197,7 @@ svg:hover {
 .section-background-three {
   position: absolute;
   /* z-index: -2; */
-  background-image: url(./assets/features.jpg);
+  background-image: url(./img/homepage/features.jpg);
   background-size: cover;
   width: 100%;
   height: 960.14px;
@@ -254,7 +254,7 @@ figure.color-white {
       rgba(0, 0, 0, 0) 19.22%,
       #080a0b 99.74%
     ),
-    url(./assets/requirements.png);
+    url(./img/homepage/requirements.png);
   background-size: cover;
   width: 100%;
   height: 960.14px;
@@ -313,7 +313,7 @@ figure.color-white {
       rgba(0, 0, 0, 0) 51.1%,
       #080a0b 99.74%
     ),
-    url(./assets/quotes-bg.jpg);
+    url(./img/homepage/quotes-bg.jpg);
   background-size: cover;
   width: 100%;
   height: 960.14px;
@@ -351,7 +351,7 @@ figure.color-white {
 .section-background-six {
   position: absolute;
   /* z-index: -2; */
-  /* background-image: url(./assets/the-games-bg.jpg); */
+  /* background-image: url(./img/homepage/the-games-bg.jpg); */
   background-size: cover;
   background-color: black;
   width: 100%;
