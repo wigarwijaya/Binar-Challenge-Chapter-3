@@ -1,21 +1,21 @@
 const express = require("express");
 const app = express();
 
-// app.set("view engine", "ejs");
+app.set("view engine", "ejs");
 
-// app.use(express.json());
-// app.use(express.urlencoded({ extended: false }));
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
 
-// const game = require("./routes/game");
-// const history = require("./routes/history");
+const user = require("./routes/user");
+const history = require("./routes/history");
 
-// app.use(game);
-// app.use(history);
+app.use(user);
+app.use(history);
 
-const { Game, Biodata, History } = require("./models");
+const { User, Biodata, History } = require("./models");
 
 app.get("/", async (_, res) => {
-  const data = await Game.findAll({
+  const data = await User.findAll({
     include: [Biodata, History],
   });
   res.json(data);

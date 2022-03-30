@@ -16,7 +16,7 @@ module.exports = (sequelize, DataTypes) => {
   Biodata.init({
     name: DataTypes.STRING,
     gender: DataTypes.STRING,
-    GameId: DataTypes.INTEGER
+    UserId: DataTypes.INTEGER
   }, {
     sequelize,
     modelName: 'Biodata',

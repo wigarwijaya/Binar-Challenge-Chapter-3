@@ -17,7 +17,7 @@ module.exports = (sequelize, DataTypes) => {
     playedAt: DataTypes.DATE,
     playerScore: DataTypes.INTEGER,
     computerScore: DataTypes.INTEGER,
-    GameId: DataTypes.INTEGER
+    UserId: DataTypes.INTEGER
   }, {
     sequelize,
     modelName: 'History',
