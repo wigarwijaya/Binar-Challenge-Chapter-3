@@ -2,9 +2,18 @@ const express = require("express");
 const app = express();
 
 app.use(express.urlencoded());
+// app.use(express.urlencoded({ extended: false }));
 app.use(express.static('assets'))
 
 app.set("view engine", "ejs");
+
+// const { Game, Biodata, History } = require("./models");
+// app.get("/", async (_, res) => {
+//   const data = await Game.findAll({
+//     include: [Biodata, History],
+//   });
+//   res.json(data);
+// });
 
 const user = require('./db/user.json');
 let isLogin = false;
@@ -45,7 +54,7 @@ app.post("/login/auth", (req, res) => {
     res.redirect('/game');
   } else {
     res.render("login", {
-      error: 'Your password and email was wrong',
+      error: 'Your password and email is wrong',
     });
   }
 });
