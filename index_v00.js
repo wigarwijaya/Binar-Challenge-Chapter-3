@@ -1,17 +1,19 @@
 const express = require("express");
 const app = express();
 
-// app.use(express.urlencoded());
-app.use(express.urlencoded({ extended: false }));
+app.use(express.urlencoded());
+// app.use(express.urlencoded({ extended: false }));
 app.use(express.static('assets'))
 
 app.set("view engine", "ejs");
 
-const user = require("./routes/user");
-const history = require("./routes/history");
-
-app.use(user);
-app.use(history);
+// const { Game, Biodata, History } = require("./models");
+// app.get("/", async (_, res) => {
+//   const data = await Game.findAll({
+//     include: [Biodata, History],
+//   });
+//   res.json(data);
+// });
 
 const user = require('./db/user.json');
 let isLogin = false;
@@ -45,24 +47,17 @@ app.get("/login", (req, res) => {
   });
 });
 
-// EJS USER HISTORY PAGE
-app.get("/histories", (req, res) => {
-    res.render("/history/index");
-  });
-
-
 // API LOGIN
 app.post("/login/auth", (req, res) => {
   if (user.email === req.body.uEmail && user.password === req.body.uPassword) {
     isLogin = true;
-    res.redirect("/histories");
+    res.redirect('/game');
   } else {
     res.render("login", {
       error: 'Your password and email is wrong',
     });
   }
 });
-
 
 
 app.listen(3000, () => console.log("Your server is running ..."));

@@ -1,21 +1,19 @@
 const express = require("express");
 const app = express();
 
-app.use(express.urlencoded());
-// app.use(express.urlencoded({ extended: false }));
+// app.use(express.urlencoded());
+app.use(express.urlencoded({ extended: false }));
 app.use(express.static('assets'))
 
 app.set("view engine", "ejs");
 
-// const { Game, Biodata, History } = require("./models");
-// app.get("/", async (_, res) => {
-//   const data = await Game.findAll({
-//     include: [Biodata, History],
-//   });
-//   res.json(data);
-// });
+const user = require("./routes/user");
+const history = require("./routes/history");
 
-const user = require('./db/user.json');
+app.use(user);
+app.use(history);
+
+const userList = require('./db/user.json');
 let isLogin = false;
 
 
@@ -47,17 +45,30 @@ app.get("/login", (req, res) => {
   });
 });
 
+// EJS DATA USER PAGE
+app.get("/user", (req, res) => {
+  res.render("/user/index");
+});
+
+
+// EJS USER HISTORY PAGE
+app.get("/histories", (req, res) => {
+    res.render("/history/index");
+  });
+
+
 // API LOGIN
 app.post("/login/auth", (req, res) => {
-  if (user.email === req.body.uEmail && user.password === req.body.uPassword) {
+  if (userList.email === req.body.userEmail && userList.password === req.body.userPassword) {
     isLogin = true;
-    res.redirect('/game');
+    res.redirect("/user");
   } else {
     res.render("login", {
       error: 'Your password and email is wrong',
     });
   }
 });
+
 
 
 app.listen(3000, () => console.log("Your server is running ..."));
