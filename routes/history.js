@@ -64,7 +64,7 @@ router.post('/history/update', async (req, res) => {
   res.redirect('/histories');
 });
 
-
+// DELETE DATA
 router.get('/history/delete/:id', async (req, res) => {
   await History.destroy({
     where: {

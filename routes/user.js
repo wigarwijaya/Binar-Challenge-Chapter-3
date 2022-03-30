@@ -1,46 +1,61 @@
 const express = require("express");
 const router = express.Router();
 
+const { redirect } = require("express/lib/response");
 const { User } = require("../models");
 
-router.get("/user", async (_, res) => {
-  res.json(await User.findAll());
+router.get('/user', async (_, res) => {
+  // res.json(await User.findAll());
+  const userData = await User.findAll();
+
+  res.render('user', {
+    user: userData,
+  });
 });
 
-router.post("/user", async (req, res) => {
-  const user = await User.create({
+// ADD DATA
+router.get('/user/add', async (_, res) => {
+  res.render('user/add-user');
+});
+
+router.post('/user/post', async (req, res) => {
+  await User.create({
     name: req.body.name,
     email: req.body.email,
     password: req.body.password,
   });
 
-  res.status(201).json(user);
+  res.redirect('/user');
 });
 
-router.put("/user/:id", async (req, res) => {
-// router.put("/user", async (req, res) => {
-  const user = await User.update({
+// UPDATE DATA
+router.get('/user/edit/:id', async (req, res) => {
+  const userData = await User.findByPk(req.params.id);
+
+  res.render('user/edit-user', {
+    user: userData,
+  });
+});
+
+router.post('/user/update', async (req, res) => {
+  await User.update({
     name: req.body.name,
     email: req.body.email,
-    password: req.body.pass,
-  }, {
-    where: {
-      id: req.params.id
-      // id: req.body.id
-    }
+    password: req.body.password,
   });
 
-  res.status(201).json(user);
+  res.redirect('/user');
 });
 
-router.delete("/user", async (req, res) => {
-  const user = await User.destroy({
+// DELETE DATA
+router.get('/user/delete/:id', async (req, res) => {
+  await User.destroy({
     where: {
-      id: req.body.id,
+      id: req.params.id,
     }
   })
 
-  res.json(user);
+  res.redirect('/user');
 });
 
 module.exports = router;
