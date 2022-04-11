@@ -5,18 +5,7 @@ const { History } = require("./../models");
 
 
 router.get('/histories', async (_, res) => {
-  // const loginData = {
-  //   id: 1,
-  //   name: 'Fulstack Web',
-  //   email: 'fullstackweb@gmail.com'
-  //   password: 'fsw'
-  // }
-
-  const historyData = await History.findAll({
-    // where: {
-    //   UserId: loginData.id,
-    // }
-  });
+  const historyData = await History.findAll();
 
   res.render('history', {
     histories: historyData,

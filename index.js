@@ -16,7 +16,6 @@ app.use(history);
 const userList = require('./db/user.json');
 let isLogin = false;
 
-
 app.use((req, res, next) => {
   // isLogin = false;
   // !isLogin = true;
