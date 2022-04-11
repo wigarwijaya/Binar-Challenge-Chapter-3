@@ -1,0 +1,579 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  box-sizing: border-box;
+}
+
+/* section one */
+
+.anchor {
+  width: 100%;
+  height: 960.14px;
+}
+
+.section-background-one {
+  position: absolute;
+  z-index: -2;
+  background-image: radial-gradient(
+      189.96% 61.18% at 50% 38.82%,
+      rgba(255, 181, 72, 0) 0%,
+      rgba(52, 44, 29, 0.80319) 73.22%,
+      #08090a 99.74%
+    ),
+    url(./img/homepage/main-bg.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 960.14px;
+  scroll-snap-align: start;
+}
+
+.navbar {
+  height: 80px;
+}
+
+.navbar-brand {
+  width: 77px;
+  height: 33px;
+  left: 107px;
+  padding-top: 0px;
+
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 33px;
+  /* identical to box height */
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+.navbar-nav {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: right;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-right: 10px;
+
+  color: #ffffff;
+}
+
+.nav-left {
+  margin-left: 60px;
+}
+
+.nav-item {
+  padding-left: 20px;
+}
+
+main {
+  margin-top: 230px;
+}
+
+h1 {
+  font-family: Arial;
+  font-style: normal;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+h1.section-one {
+  font-size: 65px;
+}
+
+h3 {
+  font-family: Arial;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 2px;
+  margin-top: 30px;
+  color: #ffffff;
+}
+
+.figure-button {
+  margin-top: 50px;
+}
+
+.btn {
+  width: 260px;
+  height: 60px;
+  background: linear-gradient(194.68deg, #ffb548 11.27%, #f3af34 90.4%);
+  border-radius: 4px;
+  text-transform: uppercase;
+  color: black;
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.btn:hover {
+  color: white;
+}
+
+.figure-toggle {
+  padding-top: 18em;
+}
+
+.toggle-caption {
+  text-decoration: none;
+  cursor: pointer;
+  color: white;
+}
+
+.toggle-caption:hover {
+  text-decoration: none;
+  cursor: pointer;
+  color: grey;
+}
+
+svg {
+  cursor: pointer;
+  stroke: white;
+}
+
+svg:hover {
+  stroke: grey;
+}
+
+/* section two */
+
+.section-background-two {
+  position: absolute;
+  /* z-index: -2; */
+  background-image: url(./img/homepage/the-games-bg.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 960.14px;
+  scroll-snap-align: start;
+}
+
+.section-two-box-left {
+  width: 600px;
+}
+
+.sub-title {
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 2px;
+  color: #ffffff;
+}
+
+.section-two-img {
+  background-image: url(./img/homepage/rockpaperstrategy-1600.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 379px;
+  position: relative;
+}
+
+.svg-left-toggle {
+  position: absolute;
+  left: -30px;
+  bottom: 170px;
+}
+
+.svg-right-toggle {
+  position: absolute;
+  bottom: 170px;
+  right: -30px;
+}
+
+.toggle-round {
+  width: 280px;
+}
+
+/* section three */
+
+.section-background-three {
+  position: absolute;
+  /* z-index: -2; */
+  background-image: url(./img/homepage/features.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 960.14px;
+  scroll-snap-align: start;
+}
+
+.section-three-container {
+  height: 960.14px;
+  margin-top: 0;
+}
+
+.blank-area-left {
+  width: 50%;
+  height: 960.14px;
+}
+
+.blank-area-right {
+  width: 50%;
+  height: 960.14px;
+}
+
+.svg-group {
+  width: 50px;
+  height: 790px;
+}
+
+.color-orange {
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 2px;
+
+  color: #ffb548;
+}
+
+.color-white {
+  color: white;
+}
+
+figure.color-white {
+  letter-spacing: 2px;
+}
+
+/* section four */
+
+.section-background-four {
+  position: absolute;
+  /* z-index: -2; */
+  background-image: radial-gradient(
+      33.26% 45% at 64.32% 47.1%,
+      rgba(255, 255, 255, 0) 3.36%,
+      rgba(0, 0, 0, 0) 19.22%,
+      #080a0b 99.74%
+    ),
+    url(./img/homepage/requirements.png);
+  background-size: cover;
+  width: 100%;
+  height: 960.14px;
+  scroll-snap-align: start;
+}
+
+.h1-section-four {
+  color: white;
+  margin-top: 35px;
+  margin-left: 125px;
+}
+
+.blank-area-top {
+  height: 30%;
+  width: 100%;
+  /* background-color: salmon; */
+  /* opacity: 25%; */
+}
+
+.blank-area-bottom {
+  height: 60%;
+  width: 100%;
+  /* background-color: green; */
+  /* opacity: 25%; */
+}
+
+.section-four-top-area {
+  margin-top: 150px;
+}
+
+.section-four-container-bottom {
+  margin: 0 5em;
+  padding-left: 4em;
+}
+
+.col-lg-3 {
+  height: 150px;
+  border: 1px solid grey;
+  padding: 1em;
+}
+
+.col-lg-6 {
+  height: 150px;
+  border: 1px solid grey;
+  padding: 1em;
+}
+
+/* section five */
+
+.section-background-five {
+  position: absolute;
+  /* z-index: -2; */
+  background-image: radial-gradient(
+      70.52% 37.27% at 24.21% 47.47%,
+      rgba(35, 15, 15, 0) 0%,
+      rgba(0, 0, 0, 0) 51.1%,
+      #080a0b 99.74%
+    ),
+    url(./img/homepage/quotes-bg.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 960.14px;
+  scroll-snap-align: start;
+}
+
+.section-five-area-left {
+  width: 50%;
+  height: 960.14px;
+}
+
+.section-five-area-right {
+  width: 50%;
+  height: 960.14px;
+}
+
+.card-body-left {
+  height: 300px;
+  padding-left: 70px;
+}
+
+.div-card {
+  margin: 1em;
+}
+
+.div-card-area {
+  height: 180px;
+  width: 400px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+}
+
+/* section six */
+
+.section-background-six {
+  position: absolute;
+  /* z-index: -2; */
+  /* background-image: url(./img/homepage/the-games-bg.jpg); */
+  background-size: cover;
+  background-color: black;
+  width: 100%;
+  height: 960.14px;
+  scroll-snap-align: start;
+}
+
+.section-six-area-left {
+  width: 50%;
+  height: 700px;
+}
+
+.section-six-area-right {
+  width: 50%;
+  height: 700px;
+}
+
+.skull {
+  background: radial-gradient(
+    45.43% 53.19% at 50% 50%,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(0, 0, 0, 0) 46.15%,
+    #080a0b 99.74%
+  );
+  width: 50%;
+  height: 700px;
+  position: absolute;
+}
+
+.section-six-card-body {
+  height: 450px;
+  padding: 0 16px 0 0;
+}
+
+.section-six-row {
+  padding-right: 40px;
+}
+
+.form-control {
+  width: 340px;
+  height: 60px;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer-top-left {
+  text-transform: uppercase;
+}
+
+ul.text-link {
+  justify-content: end;
+}
+
+li.footer:hover {
+  opacity: 75%;
+}
+
+.footer-bot-start {
+  color: white;
+  opacity: 0.5;
+  font-size: 12px;
+}
+
+.footer-bot-end {
+  font-family: open sans;
+  color: white;
+  letter-spacing: 1px;
+  font-size: 12px;
+}
+
+a.footer {
+  text-decoration: none;
+  color: white;
+}
+
+a.footer:hover {
+  cursor: pointer;
+  opacity: 75%;
+}
+
+/* RESPONSIVE */
+
+/* If the screen size is 501px wide or more, set the font-size of <div> to 80px */
+/* @media screen and (min-width: 501px) {
+  div.example {
+    font-size: 80px;
+  }
+} */
+
+/* If the screen size is 500px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 500px) {
+  .section-background-one {
+    background-position: -415px 0;
+  }
+
+  h1.section-one {
+    font-size: 50px;
+  }
+
+  .figure-toggle {
+    padding-top: 10em;
+  }
+
+  /* section two */
+
+  .section-two-container {
+    flex-direction: column;
+  }
+
+  .section-two-box-left {
+    width: 100%;
+    text-align: center;
+  }
+
+  .section-two-img {
+    background-position-x: -215px;
+  }
+
+  .svg-left-toggle {
+    left: 10px;
+  }
+
+  .svg-right-toggle {
+    right: 10px;
+  }
+
+  /* section three */
+
+  .section-background-three {
+    background-position-x: -430px;
+  }
+
+  .section-three-left-area {
+    width: 40%;
+  }
+
+  .section-three-right-area {
+    width: 60%;
+  }
+
+  /* section four */
+
+  .h1-section-four {
+    margin-top: 0;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .section-four-top-area {
+    margin-top: 50px;
+  }
+
+  .section-four-bottom-area {
+    height: 100%;
+  }
+
+  .section-four-container-bottom {
+    margin: 0em;
+    padding-right: 3em;
+    padding-left: 3em;
+  }
+
+  .col-lg-3 {
+    height: 130px;
+  }
+
+  /* section five */
+
+  .section-five-container {
+    flex-direction: column;
+  }
+
+  .section-five-area-left {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .section-five-area-right {
+    width: 100%;
+  }
+
+  .card-body-left {
+    padding-left: 0;
+    align-items: center;
+  }
+
+  /* section six */
+
+  .section-six-area-right {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+  }
+
+  .section-six-card-body {
+    padding: 50px;
+  }
+
+  .section-six-row {
+    padding-right: 0;
+  }
+
+  .section-six-input {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  .footer-top {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  ul.text-link {
+    justify-content: center;
+  }
+
+  .footer-bot-end {
+    text-align: end;
+  }
+}
