@@ -1,27 +1,28 @@
 const express = require("express");
 const app = express();
+const port = 3000;
 
 // app.use(express.urlencoded());
 app.use(express.urlencoded({ extended: false }));
-app.use(express.static('assets'))
+app.use(express.static("assets"));
 
 app.set("view engine", "ejs");
 
 const user = require("./routes/user");
 const history = require("./routes/history");
+const userList = require("./db/user.json");
 
 app.use(user);
 app.use(history);
 
-const userList = require('./db/user.json');
 let isLogin = false;
 
 app.use((req, res, next) => {
   // isLogin = false;
   // !isLogin = true;
 
-  if (req.url === '/game' && !isLogin) {
-    res.redirect('login');
+  if (req.url === "/game" && !isLogin) {
+    res.redirect("login");
   }
 
   next();
@@ -40,34 +41,33 @@ app.get("/game", (req, res) => {
 // EJS LOGIN PAGE
 app.get("/login", (req, res) => {
   res.render("login", {
-    error: '',
+    error: "",
   });
 });
 
 // EJS DATA USER PAGE
 app.get("/user", (req, res) => {
-  res.render("/user/index");
+  res.render("/user/index", { title: "Dashboard User" });
 });
-
 
 // EJS USER HISTORY PAGE
 app.get("/histories", (req, res) => {
-    res.render("/history/index");
-  });
-
+  res.render("/history/index", { title: "Dashboard History" });
+});
 
 // API LOGIN
 app.post("/login/auth", (req, res) => {
-  if (userList.email === req.body.userEmail && userList.password === req.body.userPassword) {
+  if (
+    userList.email === req.body.userEmail &&
+    userList.password === req.body.userPassword
+  ) {
     isLogin = true;
     res.redirect("/user");
   } else {
     res.render("login", {
-      error: 'Your password and email is wrong',
+      error: "Your password and email is wrong",
     });
   }
 });
 
-
-
-app.listen(3000, () => console.log("Your server is running ..."));
+app.listen(port, () => console.log(`Server is listening on port ${port}..`));
