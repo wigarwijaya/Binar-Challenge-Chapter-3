@@ -2,18 +2,15 @@ const express = require("express");
 const app = express();
 const port = 3000;
 
-// app.use(express.urlencoded());
 app.use(express.urlencoded({ extended: false }));
 app.use(express.static("assets"));
 
 app.set("view engine", "ejs");
 
-const user = require("./routes/user");
-const history = require("./routes/history");
+const routes = require("./routes");
 const userList = require("./db/user.json");
 
-app.use(user);
-app.use(history);
+app.use(routes);
 
 let isLogin = false;
 
@@ -43,16 +40,6 @@ app.get("/login", (req, res) => {
   res.render("login", {
     error: "",
   });
-});
-
-// EJS DATA USER PAGE
-app.get("/user", (req, res) => {
-  res.render("/user/index", { title: "Dashboard User" });
-});
-
-// EJS USER HISTORY PAGE
-app.get("/histories", (req, res) => {
-  res.render("/history/index", { title: "Dashboard History" });
 });
 
 // API LOGIN
